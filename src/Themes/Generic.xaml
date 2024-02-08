@@ -10,7 +10,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle StrokeThickness="1" Margin="-4" Stroke="{StaticResource RazerAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
+                    <Rectangle StrokeThickness="1" Margin="-4" Stroke="{StaticResource PaluAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -20,7 +20,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle StrokeThickness="1" Margin="0" Stroke="{StaticResource RazerAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
+                    <Rectangle StrokeThickness="1" Margin="0" Stroke="{StaticResource PaluAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -28,8 +28,8 @@
 
     <Style TargetType="{x:Type local:PaluTextBlock}">
         <Setter Property="FontFamily" Value="{StaticResource RazerTextBlockFont}"/>
-        <Setter Property="FontSize" Value="{StaticResource RazerTextBlockFontSize}"/>
-        <Setter Property="Foreground" Value="{StaticResource RazerTextBrush}"/>
+        <Setter Property="FontSize" Value="{StaticResource PaluTextBlockFontSize}"/>
+        <Setter Property="Foreground" Value="{StaticResource PaluTextBrush}"/>
     </Style>
 
     <Style TargetType="{x:Type local:PaluButton}">
@@ -66,10 +66,10 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Border Background="{TemplateBinding Background}" CornerRadius="3"/>
-                        <Border x:Name="MouseOverBackgroundElement" Background="White" CornerRadius="3" Opacity="0"/>
-                        <Border x:Name="PressedBackgroundElement" Background="Black" CornerRadius="3" Opacity="0"/>
-                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="{StaticResource PaluCornerRadius}"/>
+                        <Border x:Name="MouseOverBackgroundElement" Background="White" CornerRadius="{StaticResource PaluCornerRadius}" Opacity="0"/>
+                        <Border x:Name="PressedBackgroundElement" Background="Black" CornerRadius="{StaticResource PaluCornerRadius}" Opacity="0"/>
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="{StaticResource PaluCornerRadius}">
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           Margin="{TemplateBinding Padding}"
@@ -82,20 +82,20 @@
         <Setter Property="MinWidth" Value="90" />
         <Setter Property="MinHeight" Value="27" />
         <Setter Property="Padding" Value="16,0"/>
-        <Setter Property="Background" Value="{StaticResource RazerButtonFillGrayBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource RazerButtonFillGrayTextBrush}"/>
+        <Setter Property="Background" Value="{StaticResource PaluButtonFillGrayBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource PaluButtonFillGrayTextBrush}"/>
         <Setter Property="BorderBrush" Value="#4D000000"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="FontFamily" Value="{StaticResource RazerButtonFont}"/>
-        <Setter Property="FontSize" Value="{StaticResource RazerButtonFontSize}"/>
+        <Setter Property="FontSize" Value="{StaticResource PaluButtonFontSize}"/>
         <Setter Property="FocusVisualStyle" Value="{StaticResource FarFocusVisualStyle}"/>
         <Style.Triggers>
             <Trigger Property="IsDefault" Value="True">
                 <Trigger.Setters>
-                    <Setter Property="Background" Value="{StaticResource RazerButtonFillPrimaryBackgroundBrush}"/>
-                    <Setter Property="Foreground" Value="{StaticResource RazerButtonFillPrimaryTextBrush}"/>
+                    <Setter Property="Background" Value="{StaticResource PaluButtonFillPrimaryBackgroundBrush}"/>
+                    <Setter Property="Foreground" Value="{StaticResource PaluButtonFillPrimaryTextBrush}"/>
                 </Trigger.Setters>
             </Trigger>
         </Style.Triggers>
@@ -121,7 +121,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
-                    <Border x:Name="Root" CornerRadius="3" Background="#4DFFFFFF">
+                    <Border x:Name="Root" CornerRadius="{StaticResource PaluCornerRadius}" Background="#4DFFFFFF">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualStateGroup.Transitions>
@@ -131,14 +131,14 @@
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Root" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
-                                            <LinearColorKeyFrame KeyTime="00:00:00" Value="{StaticResource RazerAccentColor}"/>
+                                            <LinearColorKeyFrame KeyTime="00:00:00" Value="{StaticResource PaluAccentColor}"/>
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Root" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
-                                            <LinearColorKeyFrame KeyTime="00:00:00" Value="{StaticResource RazerAccentColor}"/>
+                                            <LinearColorKeyFrame KeyTime="00:00:00" Value="{StaticResource PaluAccentColor}"/>
                                         </ColorAnimationUsingKeyFrames>
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Root" Storyboard.TargetProperty="(UIElement.Opacity)">
                                             <LinearDoubleKeyFrame KeyTime="0" Value="0.7"/>
@@ -156,7 +156,7 @@
 
     <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type local:PaluScrollBar}">
         <Grid>
-            <Border CornerRadius="3" Background="#4DFFFFFF" />
+            <Border CornerRadius="{StaticResource PaluCornerRadius}" Background="#4DFFFFFF" />
             <Track x:Name="PART_Track" IsDirectionReversed="true">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageUpCommand" />
@@ -173,7 +173,7 @@
 
     <ControlTemplate x:Key="HorizontalScrollBar" TargetType="{x:Type local:PaluScrollBar}">
         <Grid>
-            <Border CornerRadius="3" Background="#4DFFFFFF" />
+            <Border CornerRadius="{StaticResource PaluCornerRadius}" Background="#4DFFFFFF" />
             <Track x:Name="PART_Track" IsDirectionReversed="False">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageLeftCommand" />
@@ -258,7 +258,7 @@
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
-                                            <LinearColorKeyFrame KeyTime="0" Value="{StaticResource RazerAccentColor}"/>
+                                            <LinearColorKeyFrame KeyTime="0" Value="{StaticResource PaluAccentColor}"/>
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -297,7 +297,7 @@
                                                   TextTrimming="{TemplateBinding TextBlock.TextTrimming}"
                                                   FontFamily="{TemplateBinding FontFamily}"
                                                   FontSize="{TemplateBinding FontSize}"
-                                                  Foreground="{StaticResource RazerTextBoxPlaceholderBrush}"
+                                                  Foreground="{StaticResource PaluTextBoxPlaceholderBrush}"
                                                   Visibility="{TemplateBinding PlaceholderVisibility}"
                                                   VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
@@ -308,7 +308,7 @@
                             </Grid>
                         </Border>
                         <Border x:Name="FocusBorder"
-                            BorderBrush="{StaticResource RazerAccentBrush}"
+                            BorderBrush="{StaticResource PaluAccentBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Opacity="0"></Border>
                     </Grid>
@@ -323,14 +323,14 @@
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="AllowDrop" Value="true" />
-        <Setter Property="BorderBrush" Value="{StaticResource RazerTextBoxBorderBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource PaluTextBoxBorderBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Background" Value="{StaticResource RazerTextBoxBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource RazerTextBoxForegroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource PaluTextBoxBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource PaluTextBoxForegroundBrush}"/>
         <Setter Property="FontFamily" Value="{StaticResource RazerTextBoxFont}"/>
-        <Setter Property="FontSize" Value="{StaticResource RazerTextBoxFontSize}"/>
-        <Setter Property="SelectionBrush" Value="{StaticResource RazerTextBoxSelectionBrush}"/>
-        <Setter Property="CaretBrush" Value="{StaticResource RazerAccentBrush}"/>
+        <Setter Property="FontSize" Value="{StaticResource PaluTextBoxFontSize}"/>
+        <Setter Property="SelectionBrush" Value="{StaticResource PaluTextBoxSelectionBrush}"/>
+        <Setter Property="CaretBrush" Value="{StaticResource PaluAccentBrush}"/>
         <Setter Property="TextWrapping" Value="NoWrap"/>
         <Setter Property="TextBlock.TextTrimming" Value="CharacterEllipsis"/>
         <Setter Property="IsReadOnly" Value="True"/>

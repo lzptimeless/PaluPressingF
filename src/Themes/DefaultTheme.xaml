@@ -10,7 +10,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle StrokeThickness="1" Margin="-4" Stroke="{StaticResource RazerAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
+                    <Rectangle StrokeThickness="1" Margin="-4" Stroke="{StaticResource PaluAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -20,7 +20,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle StrokeThickness="1" Margin="0" Stroke="{StaticResource RazerAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
+                    <Rectangle StrokeThickness="1" Margin="0" Stroke="{StaticResource PaluAccentBrush}" StrokeDashArray="1 2" StrokeDashCap="Square" SnapsToDevicePixels="true"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

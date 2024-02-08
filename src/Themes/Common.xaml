@@ -1,38 +1,40 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-    <sys:Double x:Key="RazerTextBlockFontSize">14</sys:Double>
-    <sys:Double x:Key="RazerButtonFontSize">12</sys:Double>
-    <sys:Double x:Key="RazerTextBoxFontSize">14</sys:Double>
+    <CornerRadius x:Key="PaluCornerRadius">0</CornerRadius>
+    
+    <sys:Double x:Key="PaluTextBlockFontSize">14</sys:Double>
+    <sys:Double x:Key="PaluButtonFontSize">12</sys:Double>
+    <sys:Double x:Key="PaluTextBoxFontSize">14</sys:Double>
 
-    <Color x:Key="RazerAccentColor">#44D62C</Color>
-    <Color x:Key="RazerAccentSecondColor">#4D44D62C</Color>
-    <Color x:Key="RazerWarnColor">#FD8611</Color>
-    <Color x:Key="RazerCriticalColor">#FD4949</Color>
-    <Color x:Key="RazerCriticalSecondColor">#C8323C</Color>
-    <Color x:Key="RazerTextColor">#CCCCCC</Color>
-    <Color x:Key="RazerTextSecondColor">#999999</Color>
-    <Color x:Key="RazerButtonFillGrayTextColor">White</Color>
-    <Color x:Key="RazerButtonFillGrayBackgroundColor">#707070</Color>
-    <Color x:Key="RazerButtonFillPrimaryTextColor">Black</Color>
-    <Color x:Key="RazerTextBoxBorderColor">#5D5D5D</Color>
-    <Color x:Key="RazerTextBoxBackgroundColor">Black</Color>
-    <Color x:Key="RazerTextBoxPlaceholderColor">#707070</Color>
+    <Color x:Key="PaluAccentColor">#259fe6</Color>
+    <Color x:Key="PaluAccentSecondColor">#4D259fe6</Color>
+    <Color x:Key="PaluWarnColor">#FD8611</Color>
+    <Color x:Key="PaluCriticalColor">#FD4949</Color>
+    <Color x:Key="PaluCriticalSecondColor">#C8323C</Color>
+    <Color x:Key="PaluTextColor">#CCCCCC</Color>
+    <Color x:Key="PaluTextSecondColor">#999999</Color>
+    <Color x:Key="PaluButtonFillGrayTextColor">White</Color>
+    <Color x:Key="PaluButtonFillGrayBackgroundColor">#707070</Color>
+    <Color x:Key="PaluButtonFillPrimaryTextColor">Black</Color>
+    <Color x:Key="PaluTextBoxBorderColor">#5D5D5D</Color>
+    <Color x:Key="PaluTextBoxBackgroundColor">Black</Color>
+    <Color x:Key="PaluTextBoxPlaceholderColor">#707070</Color>
 
-    <SolidColorBrush x:Key="RazerAccentBrush" Color="{StaticResource RazerAccentColor}"/>
-    <SolidColorBrush x:Key="RazerSecondBrush" Color="{StaticResource RazerAccentSecondColor}"/>
-    <SolidColorBrush x:Key="RazerWarnBrush" Color="{StaticResource RazerWarnColor}"/>
-    <SolidColorBrush x:Key="RazerCriticalBrush" Color="{StaticResource RazerCriticalColor}"/>
-    <SolidColorBrush x:Key="RazerCriticalSecondBrush" Color="{StaticResource RazerCriticalSecondColor}"/>
-    <SolidColorBrush x:Key="RazerTextBrush" Color="{StaticResource RazerTextColor}"/>
-    <SolidColorBrush x:Key="RazerTextSecondBrush" Color="{StaticResource RazerTextSecondColor}"/>
-    <SolidColorBrush x:Key="RazerButtonFillGrayTextBrush" Color="{StaticResource RazerButtonFillGrayTextColor}"/>
-    <SolidColorBrush x:Key="RazerButtonFillGrayBackgroundBrush" Color="{StaticResource RazerButtonFillGrayBackgroundColor}"/>
-    <SolidColorBrush x:Key="RazerButtonFillPrimaryTextBrush" Color="{StaticResource RazerButtonFillPrimaryTextColor}"/>
-    <SolidColorBrush x:Key="RazerButtonFillPrimaryBackgroundBrush" Color="{StaticResource RazerAccentColor}"/>
-    <SolidColorBrush x:Key="RazerTextBoxBorderBrush" Color="{StaticResource RazerTextBoxBorderColor}"/>
-    <SolidColorBrush x:Key="RazerTextBoxBackgroundBrush" Color="{StaticResource RazerTextBoxBackgroundColor}"/>
-    <SolidColorBrush x:Key="RazerTextBoxSelectionBrush" Color="{StaticResource RazerAccentSecondColor}"/>
-    <SolidColorBrush x:Key="RazerTextBoxForegroundBrush" Color="{StaticResource RazerTextColor}"/>
-    <SolidColorBrush x:Key="RazerTextBoxPlaceholderBrush" Color="{StaticResource RazerTextBoxPlaceholderColor}"/>
+    <SolidColorBrush x:Key="PaluAccentBrush" Color="{StaticResource PaluAccentColor}"/>
+    <SolidColorBrush x:Key="PaluSecondBrush" Color="{StaticResource PaluAccentSecondColor}"/>
+    <SolidColorBrush x:Key="PaluWarnBrush" Color="{StaticResource PaluWarnColor}"/>
+    <SolidColorBrush x:Key="PaluCriticalBrush" Color="{StaticResource PaluCriticalColor}"/>
+    <SolidColorBrush x:Key="PaluCriticalSecondBrush" Color="{StaticResource PaluCriticalSecondColor}"/>
+    <SolidColorBrush x:Key="PaluTextBrush" Color="{StaticResource PaluTextColor}"/>
+    <SolidColorBrush x:Key="PaluTextSecondBrush" Color="{StaticResource PaluTextSecondColor}"/>
+    <SolidColorBrush x:Key="PaluButtonFillGrayTextBrush" Color="{StaticResource PaluButtonFillGrayTextColor}"/>
+    <SolidColorBrush x:Key="PaluButtonFillGrayBackgroundBrush" Color="{StaticResource PaluButtonFillGrayBackgroundColor}"/>
+    <SolidColorBrush x:Key="PaluButtonFillPrimaryTextBrush" Color="{StaticResource PaluButtonFillPrimaryTextColor}"/>
+    <SolidColorBrush x:Key="PaluButtonFillPrimaryBackgroundBrush" Color="{StaticResource PaluAccentColor}"/>
+    <SolidColorBrush x:Key="PaluTextBoxBorderBrush" Color="{StaticResource PaluTextBoxBorderColor}"/>
+    <SolidColorBrush x:Key="PaluTextBoxBackgroundBrush" Color="{StaticResource PaluTextBoxBackgroundColor}"/>
+    <SolidColorBrush x:Key="PaluTextBoxSelectionBrush" Color="{StaticResource PaluAccentSecondColor}"/>
+    <SolidColorBrush x:Key="PaluTextBoxForegroundBrush" Color="{StaticResource PaluTextColor}"/>
+    <SolidColorBrush x:Key="PaluTextBoxPlaceholderBrush" Color="{StaticResource PaluTextBoxPlaceholderColor}"/>
 </ResourceDictionary>
