@@ -4,10 +4,44 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PaluPressingF"
+        xmlns:controls="clr-namespace:PaluPressingF.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="400">
-    <Grid>
-        <Button x:Name="StartButton" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="90"
-                Click="StartButton_Click">Start</Button>
+        Title="Palu Pressing F"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight">
+    <Grid Width="400" Height="225">
+        <!-- Background -->
+        <Image Source="/Assets/Images/background.jpg"/>
+        <!-- Background mask -->
+        <Rectangle Fill="Black">
+            <Rectangle.OpacityMask>
+                <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="1" RadiusY="1">
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Color="Transparent" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <!-- Content -->
+        <Grid Margin="10" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <controls:PaluTextBlock Text="HOT KEY:" VerticalAlignment="Center"/>
+                <controls:PaluHotKeyTextBox x:Name="HotKeyTextBox" Grid.Column="1" Margin="10,0,0,0" Width="150"
+                    ModifierKeys="Alt" HotKey="D1"/>
+                <controls:PaluButton x:Name="ApplyButton" Margin="10,0,0,0" VerticalAlignment="Center"
+                    Content="APPLY" Click="ApplyButton_Click"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,30,0,0" HorizontalAlignment="Center">
+                <controls:PaluButton x:Name="PressingFButton" IsDefault="True"
+                    Content="PRESSING F" Click="PressingFButton_Click"/>
+                <controls:PaluButton x:Name="PressFButton" Margin="20,0,0,0" IsDefault="True"
+                    Content="PRESS F" Click="PressFButton_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
